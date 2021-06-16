@@ -6,13 +6,13 @@ import static org.junit.Assert.*;
 public class TestsCasesAlgorithmName {
     @Test
     public void test() {
-        assertEquals(true, AlgorithmName.isIsogram("Dermatoglyphics"));
-        assertEquals(true, AlgorithmName.isIsogram("isogram"));
-        assertEquals(false, AlgorithmName.isIsogram("moose"));
-        assertEquals(false, AlgorithmName.isIsogram("isIsogram"));
-        assertEquals(false, AlgorithmName.isIsogram("aba"));
-        assertEquals(false, AlgorithmName.isIsogram("moOse"));
-        assertEquals(true, AlgorithmName.isIsogram("thumbscrewjapingly"));
-        assertEquals(true, AlgorithmName.isIsogram(""));
+        assertEquals("Test value Dermatoglyphics",true, AlgorithmName.isIsogram("Dermatoglyphics"));
+        assertEquals("Test value isogram",true, AlgorithmName.isIsogram("isogram"));
+        assertEquals("Test value moose",false, AlgorithmName.isIsogram("moose"));
+        assertEquals("Test value isIsogram",false, AlgorithmName.isIsogram("isIsogram"));
+        assertEquals("Test value aba",false, AlgorithmName.isIsogram("aba"));
+        assertEquals("Test value moOse",false, AlgorithmName.isIsogram("moOse"));
+        assertEquals("Test value thumbscrewjapingly",true, AlgorithmName.isIsogram("thumbscrewjapingly"));
+        assertEquals("Test value ''",true, AlgorithmName.isIsogram(""));
     }
 }
