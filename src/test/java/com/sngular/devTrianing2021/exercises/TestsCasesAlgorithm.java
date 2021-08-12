@@ -30,6 +30,11 @@ public class TestsCasesAlgorithm {
     }
 
     @Test
+    public void testSix() {
+        assertEquals("Test value \"ymandiasz\"","z", Algorithm.startOz("ymandiasz"));
+    }
+
+    @Test
     public void testSeven() {
         assertEquals("Test value \"abc\"","", Algorithm.startOz("abc"));
     }
@@ -50,9 +55,7 @@ public class TestsCasesAlgorithm {
     }
 
     @Test
-    public void testEleven() {
-        assertEquals("Test value \"zzzz\"","zz", Algorithm.startOz("zzzz"));
-    }
+    public void testEleven() { assertEquals("Test value \"zzzz\"","zz", Algorithm.startOz("zzzz"));}
 
     @Test
     public void testTwelve() {
@@ -74,8 +77,4 @@ public class TestsCasesAlgorithm {
         assertEquals("Test value \"ymandiaso\"","o", Algorithm.startOz("ymandiaso"));
     }
 
-    @Test
-    public void testSixteen() {
-        assertEquals("Test value \"ymandiasz\"","z", Algorithm.startOz("ymandiasz"));
-    }
 }
